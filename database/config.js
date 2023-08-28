@@ -19,5 +19,6 @@ const credentials = {
 };
 
 module.exports = {
-  local: credentials
+  local: credentials,
+  seederStorege: 'sequelize'
 };

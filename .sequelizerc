@@ -3,7 +3,8 @@ const path = require('path');
 module.exports = {
   'config': path.resolve('database', 'config.js'),
   'migrations-path': path.resolve('database', 'migrations'),
-  'models-path': path.resolve('database', 'models')
+  'models-path': path.resolve('database', 'models'),
+  'seeders-path': path.resolve('database/seeders')
 };
 
 //archivo de conf sequelize , en que carpeta busca la config de sequelize , en que carpeta buca migraciones y en cual los modelos
