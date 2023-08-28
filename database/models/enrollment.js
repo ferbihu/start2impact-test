@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 
 module.exports = function(sequelize) {
-    return sequelize.define('Enrollment', {
+    const Enrollment =  sequelize.define('Enrollment', {
         studentId: {
             type: Sequelize.INTEGER,
             autoIncrement: true,
@@ -13,4 +13,5 @@ module.exports = function(sequelize) {
             primaryKey: true
         }
     })
+    return Enrollment;
 };

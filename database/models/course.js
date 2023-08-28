@@ -11,7 +11,8 @@ module.exports = function(sequelize) {
         title: { type: DataTypes.STRING },
         description: { type: DataTypes.STRING },
         startDate: { type: DataTypes.DATE },
-        endDate: { type: DataTypes.DATE }
+        endDate: { type: DataTypes.DATE },
+        level: { type: DataTypes.STRING}
     })
     Course.associate = models => {
         Course.belongsTo(models.instructor)
